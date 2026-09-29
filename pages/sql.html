@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/Global.css" />
+    <title>COURS SIO WEB | HTML</title>
+  </head>
+  <body>
+    <!-- En-tête de la page -->
+    <header>
+      <nav>
+        <div class="logo">Logo</div>
+        <div class="menu" id="menu">
+          <a href="../index.html">Accueil</a>
+          <a href="html.html">HTML</a>
+          <a href="css.html">CSS</a>
+          <a href="js.html">JavaScript</a>
+          <a href="php.html">PHP</a>
+          <a href="kotlin.html">Kotlin</a>
+          <a href="python.html">Python</a>
+          <a href="sql.html">SQL</a>
+          <a href="angular.html">Angular</a>
+          <a href="git.html">Git</a>
+          <a href="github.html">GitHub</a>
+          <a href="linux.html">Linux</a>
+          <a href="comande_linux.html">Ligne de commande Linux</a>
+        </div>
+        <div
+          class="burger"
+          id="burger"
+          aria-label="Menu"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </header>
+    <!-- Contenu principal -->
+        <!-- Contenu principal -->
+    <main>
+      <h1>Introduction à SQL</h1>
+      <p>
+        SQL (Structured Query Language) a été initialement développé par les chercheurs d'IBM au début 
+        des années 1970 sur la base du modèle relationnel de données. Il est devenu le standard officiel 
+        de gestion de données en 1986.
+      </p>
+      <p>
+        Le but de SQL est d'offrir un langage normalisé pour interagir avec des bases de données 
+        relationnelles. Il permet aux administrateurs et développeurs de structurer des tables, d'insérer, 
+        de mettre à jour, de sécuriser et d'extraire efficacement des données volumineuses.
+      </p>
+      <p>
+        SQL est un langage déclaratif. L'utilisateur indique au système le résultat qu'il souhaite obtenir 
+        (quelles données extraire), et le moteur de base de données se charge de déterminer la méthode d'exécution.
+      </p>
+      <!-- section explication balise et attribut  -->
+      <section>
+        <h2>Les types de requêtes SQL</h2>
+        <p>
+          Les instructions SQL se répartissent en plusieurs sous-ensembles selon la nature de l'opération 
+          effectuée sur la base :
+        </p>
+        <ul>
+          <li>SELECT : commande d'extraction permettant d'interroger et de lire les enregistrements</li>
+          <li>INSERT / UPDATE / DELETE : commandes de manipulation pour ajouter, modifier ou purger des lignes</li>
+          <li>CREATE / ALTER / DROP : requêtes de définition pour bâtir ou détruire des structures de tables</li>
+          <li>JOIN : clauses d'association croisant les informations réparties sur plusieurs tables</li>
+        </ul>
+        <h2>Clauses de filtrage courantes</h2>
+        <p>
+          Pour trier et isoler précisément les informations, les requêtes s'associent à des mots-clés 
+          restrictifs :
+        </p>
+        <ul>
+          <li>WHERE : applique une ou plusieurs conditions strictes pour filtrer les lignes de données</li>
+          <li>ORDER BY : organise l'affichage des résultats par ordre croissant (ASC) ou décroissant (DESC)</li>
+          <li>GROUP BY : rassemble les lignes identiques pour réaliser des calculs d'agrégation (somme, moyenne)</li>
+        </ul>
+        <h2>Exemple de code SQL</h2>
+        <pre>
+            <code>
+                -- Sélectionner les étudiants de la filière SIO
+                SELECT id_etudiant, nom, prenom 
+                FROM t_etudiants
+                WHERE section = 'SIO'
+                ORDER BY nom ASC;
+                
+                -- Insérer un nouvel enregistrement dans la table
+                INSERT INTO t_etudiants (nom, prenom, section) 
+                VALUES ('Dupont', 'Jean', 'SIO');
+            </code>
+        </pre>
+      </section>
+      <section>
+        <h2>Ressources supplémentaires</h2>
+        <ul>
+          <li>
+            <a href="https://sql.sh">SQL.sh - Cours de référence SQL en français</a>
+          </li>
+          <li>
+            <a href="https://w3schools.com"
+              >Tutoriel W3Schools SQL</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>

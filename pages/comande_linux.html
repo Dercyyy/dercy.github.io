@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/Global.css" />
+    <title>COURS SIO WEB | HTML</title>
+  </head>
+  <body>
+    <!-- En-tête de la page -->
+    <header>
+      <nav>
+        <div class="logo">Logo</div>
+        <div class="menu" id="menu">
+          <a href="../index.html">Accueil</a>
+          <a href="html.html">HTML</a>
+          <a href="css.html">CSS</a>
+          <a href="javascript.html">JavaScript</a>
+          <a href="php.html">PHP</a>
+          <a href="Kotlin.html">Kotlin</a>
+          <a href="python.html">Python</a>
+          <a href="sql.html">SQL</a>
+          <a href="angular.html">Angular</a>
+          <a href="git.html">Git</a>
+          <a href="github.html">GitHub</a>
+          <a href="linux.html">Linux</a>
+          <a href="comande_linux.html">Ligne de commande Linux</a>
+        </div>
+        <div
+          class="burger"
+          id="burger"
+          aria-label="Menu"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </header>
+    <!-- Contenu principal -->
+        <main>
+      <h1>Aide-Mémoire : Les Commandes Linux</h1>
+      <p>
+        Linux est un système d'exploitation puissant entièrement pilotable en ligne de commande. 
+        Le terminal permet d'exécuter des tâches complexes, de gérer des fichiers et d'administrer 
+        un système avec rapidité et précision.
+      </p>
+      <p>
+        Cet aide-mémoire regroupe les commandes indispensables pour naviguer dans l'arborescence, 
+        manipuler les fichiers, vérifier l'état du système et gérer les permissions.
+      </p>
+      <p>
+        Chaque commande s'exécute en tapant son nom dans le terminal, souvent accompagnée d'arguments 
+        ou d'options (comme -l ou -h) pour modifier son comportement par défaut.
+      </p>
+      
+      <!-- section explication balise et attribut  -->
+      <section>
+        <h2>Navigation & Fichiers</h2>
+        <p>
+          Ces commandes de base permettent de vous repérer dans l'arborescence Linux et de lister 
+          les éléments présents :
+        </p>
+        <ul>
+          <li>pwd : affiche le chemin complet du dossier courant</li>
+          <li>ls -la : liste tous les fichiers, y compris les fichiers cachés, avec leurs détails</li>
+          <li>cd /chemin/ : change de répertoire pour aller vers la destination spécifiée</li>
+          <li>mkdir nom_dossier : crée un nouveau répertoire vide</li>
+        </ul>
+
+        <h2>Manipulation de fichiers</h2>
+        <p>
+          Utilisez ces commandes pour créer, copier, déplacer ou supprimer vos documents 
+          et dossiers :
+        </p>
+        <ul>
+          <li>touch fichier.txt : crée un fichier vide ou met à jour sa date de modification</li>
+          <li>cp source.txt dest.txt : copie un fichier (ajoutez -r pour copier un dossier entier)</li>
+          <li>mv ancien_nom nouveau_nom : déplace ou renomme un fichier ou un dossier</li>
+          <li>rm -rf nom_dossier : supprime définitivement et sans confirmation un dossier et son contenu</li>
+        </ul>
+
+        <h2>Gestion du système & Droits</h2>
+        <p>
+          Ces outils servent à surveiller les ressources de la machine et à gérer les privilèges 
+          de sécurité :
+        </p>
+        <ul>
+          <li>sudo commande : exécute la commande avec les privilèges de l'administrateur (root)</li>
+          <li>chmod 755 fichier : modifie les permissions d'accès (lecture, écriture, exécution)</li>
+          <li>top : affiche en temps réel les processus actifs et l'utilisation de la mémoire/CPU</li>
+          <li>df -h : montre l'espace disque disponible sur les différentes partitions</li>
+        </ul>
+
+        <h2>Exemple de script Linux (Bash)</h2>
+        <pre>
+            <code>
+                #!/bin/bash
+                echo "Début du script de sauvegarde..."
+                mkdir -p /home/user/sauvegarde
+                cp -r /var/www/html /home/user/sauvegarde/
+                echo "Sauvegarde terminée avec succès !"
+            </code>
+        </pre>
+      </section>
+
+      <section>
+        <h2>Ressources supplémentaires</h2>
+        <ul>
+          <li>
+            <a href="https://mozilla.org"
+              >Introduction à la ligne de commande sur MDN</a
+            >
+          </li>
+          <li>
+            <a href="https://w3schools.com"
+              >Tutoriel Linux sur W3Schools</a
+            >
+          </li>
+          <li>
+            <a href="https://ubuntu-fr.org">Communauté francophone Ubuntu - Documentation et Forum</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <!-- définition des droits d'auteur -->
+      <p>&copy; 2026 COURS SIO WEB LDV Melun. Tous droits réservés.</p>
+    </footer>
+    <!-- script -->
+    <script src="../js/script.js"></script>
+  </body>
+</html>

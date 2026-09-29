@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/Global.css" />
+    <title>COURS SIO WEB | HTML</title>
+  </head>
+  <body>
+    <!-- En-tête de la page -->
+    <header>
+      <nav>
+        <div class="logo">Logo</div>
+        <div class="menu" id="menu">
+          <a href="../index.html">Accueil</a>
+          <a href="html.html">HTML</a>
+          <a href="css.html">CSS</a>
+          <a href="js.html">JavaScript</a>
+          <a href="php.html">PHP</a>
+          <a href="kotlin.html">Kotlin</a>
+          <a href="python.html">Python</a>
+          <a href="sql.html">SQL</a>
+          <a href="angular.html">Angular</a>
+          <a href="git.html">Git</a>
+          <a href="github.html">GitHub</a>
+          <a href="linux.html">Linux</a>
+          <a href="comande_linux.html">Ligne de commande Linux</a>
+        </div>
+        <div
+          class="burger"
+          id="burger"
+          aria-label="Menu"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </header>
+    <!-- Contenu principal -->
+        <!-- Contenu principal -->
+        <!-- Contenu principal -->
+    <main>
+      <h1>Introduction à Angular</h1>
+      <p>
+        Angular est un framework applicatif open-source développé et maintenu par les équipes de Google. 
+        Conçu comme une refonte intégrale de l'ancien AngularJS, sa première version stable est sortie en 2016.
+      </p>
+      <p>
+        L'objectif d'Angular est de fournir une plateforme complète pour structurer des Single Page 
+        Applications (SPA) côté client. Il permet de synchroniser l'affichage avec la logique métier, 
+        mettant à jour dynamiquement l'interface sans jamais nécessiter de rechargement complet de la page.
+      </p>
+      <p>
+        Le framework impose l'utilisation de TypeScript. Son architecture stricte et hautement modulaire 
+        est particulièrement adaptée pour le développement d'applications web complexes à l'échelle industrielle.
+      </p>
+      <!-- section explication balise et attribut  -->
+      <section>
+        <h2>L'architecture d'Angular</h2>
+        <p>
+          Une application Angular s'articule autour de concepts modulaires interdépendants :
+        </p>
+        <ul>
+          <li>Composants (Components) : blocs de base liant une vue HTML, du style CSS et du code logique</li>
+          <li>Gabarits (Templates) : code HTML enrichi de directives propres pour afficher les données</li>
+          <li>Directives (*ngIf, *ngFor) : attributs logiques permettant de manipuler la structure HTML</li>
+          <li>Services : classes dédiées à la centralisation et au partage des données entre composants</li>
+        </ul>
+        <h2>Outils intégrés au Framework</h2>
+        <p>
+          Angular intègre nativement toutes les briques nécessaires sans dépendre de packages externes :
+        </p>
+        <ul>
+          <li>Angular CLI : interface en ligne de commande pour générer et compiler l'application</li>
+          <li>Le Routeur : module gérant la navigation fluide entre les différentes vues de l'application</li>
+          <li>Client HTTP : couche optimisée pour interagir avec des API et services backend distants</li>
+        </ul>
+        <h2>Exemple de code Angular</h2>
+        <pre>
+            <code>
+                import { Component } from '@angular/core';
+
+                @Component({
+                  selector: 'app-bienvenue',
+                  template: `&lt;h1&gt;Bonjour {{ etudiant }} !&lt;/h1&gt;`,
+                  styles: [`h1 { color: #dd0031; }`]
+                })
+                export class BienvenueComponent {
+                  etudiant: string = 'Étudiant SIO';
+                }
+            </code>
+        </pre>
+      </section>
+      <section>
+        <h2>Ressources supplémentaires</h2>
+        <ul>
+          <li>
+            <a href="https://angular.dev">Documentation officielle Angular</a>
+          </li>
+          <li>
+            <a href="https://w3schools.com"
+              >Tutoriel W3Schools Angular</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>

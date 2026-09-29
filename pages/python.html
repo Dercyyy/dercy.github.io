@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/Global.css" />
+    <title>COURS SIO WEB | HTML</title>
+  </head>
+  <body>
+    <!-- En-tête de la page -->
+    <header>
+      <nav>
+        <div class="logo">Logo</div>
+        <div class="menu" id="menu">
+          <a href="../index.html">Accueil</a>
+          <a href="html.html">HTML</a>
+          <a href="css.html">CSS</a>
+          <a href="js.html">JavaScript</a>
+          <a href="php.html">PHP</a>
+          <a href="kotlin.html">Kotlin</a>
+          <a href="python.html">Python</a>
+          <a href="sql.html">SQL</a>
+          <a href="angular.html">Angular</a>
+          <a href="git.html">Git</a>
+          <a href="github.html">GitHub</a>
+          <a href="linux.html">Linux</a>
+          <a href="comande_linux.html">Ligne de commande Linux</a>
+        </div>
+        <div
+          class="burger"
+          id="burger"
+          aria-label="Menu"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </header>
+    <!-- Contenu principal -->
+       <!-- Contenu principal -->
+    <main>
+      <h1>Introduction à Python</h1>
+      <p>
+        Python a été conçu par Guido van Rossum et publié initialement en 1991. Il a développé ce langage 
+        avec une philosophie forte axée sur la lisibilité et la clarté du code, permettant de travailler 
+        plus efficacement sans fioritures syntaxiques.
+      </p>
+      <p>
+        Python met à disposition des développeurs une syntaxe épurée et très proche de la langue anglaise. 
+        Son objectif est de faciliter l'écriture d'algorithmes clairs pour des projets de toutes tailles, 
+        allant du simple script d'automatisation système aux architectures de données complexes.
+      </p>
+      <p>
+        C'est un langage interprété, multi-paradigme et doté d'un typage dynamique fort. Il embarque une 
+        vaste bibliothèque standard qui couvre de nombreux besoins applicatifs sans outils tiers.
+      </p>
+      <!-- section explication balise et attribut  -->
+      <section>
+        <h2>Les spécificités de Python</h2>
+        <p>
+          L'architecture de Python repose sur des règles de mise en page strictes pour organiser 
+          le code source :
+        </p>
+        <ul>
+          <li>L'indentation : l'alignement visuel remplace les accolades pour délimiter les blocs logiques</li>
+          <li>Typage automatique : le type d'une variable est déduit dynamiquement lors de son affectation</li>
+          <li>Garbage Collector : gestion automatique du cycle de vie et de la libération de la mémoire</li>
+          <li>Mots-clés intuitifs : emploi de termes explicites comme and, or, not, ou in</li>
+        </ul>
+        <h2>Domaines d'utilisation principaux</h2>
+        <p>
+          Sa flexibilité rend Python incontournable dans les filières de l'informatique de pointe :
+        </p>
+        <ul>
+          <li>Data Science & IA : analyse de données massives et apprentissage automatique (Scikit-Learn, Pandas)</li>
+          <li>Développement Web : conception d'applications robustes via des frameworks comme Django ou Flask</li>
+          <li>Scripting & Réseau : scripts d'automatisation pour l'administration système sous Linux</li>
+        </ul>
+        <h2>Exemple de code Python</h2>
+        <pre>
+            <code>
+                # Fonction de vérification d'éligibilité
+                def verifier_statut(age):
+                    if age &gt;= 18:
+                        return "Majeur"
+                    else:
+                        return "Mineur"
+
+                # Boucle de traitement sur une liste
+                ages = [16, 21, 18]
+                for un_age in ages:
+                    print(f"Âge {un_age} : {verifier_statut(un_age)}")
+            </code>
+        </pre>
+      </section>
+      <section>
+        <h2>Ressources supplémentaires</h2>
+        <ul>
+          <li>
+            <a href="https://python.org"
+              >Documentation officielle Python</a
+            >
+          </li>
+          <li>
+            <a href="https://w3schools.com"
+              >Tutoriel W3Schools Python</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>

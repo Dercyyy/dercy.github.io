@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/Global.css" />
+    <title>COURS SIO WEB | HTML</title>
+  </head>
+  <body>
+    <!-- En-tête de la page -->
+    <header>
+      <nav>
+        <div class="logo">Logo</div>
+        <div class="menu" id="menu">
+          <a href="../index.html">Accueil</a>
+          <a href="html.html">HTML</a>
+          <a href="css.html">CSS</a>
+          <a href="js.html">JavaScript</a>
+          <a href="php.html">PHP</a>
+          <a href="kotlin.html">Kotlin</a>
+          <a href="python.html">Python</a>
+          <a href="sql.html">SQL</a>
+          <a href="angular.html">Angular</a>
+          <a href="git.html">Git</a>
+          <a href="github.html">GitHub</a>
+          <a href="linux.html">Linux</a>
+          <a href="comande_linux.html">Ligne de commande Linux</a>
+        </div>
+        <div
+          class="burger"
+          id="burger"
+          aria-label="Menu"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </header>
+    <!-- Contenu principal -->
+        <!-- Contenu principal -->
+        <!-- Contenu principal -->
+        <!-- Contenu principal -->
+    <main>
+      <h1>Introduction à Kotlin</h1>
+      <p>
+        Kotlin a été dévoilé par la société JetBrains en 2011. L'objectif de l'équipe de développement 
+        était de concevoir un langage moderne, plus concis et plus sûr que le Java traditionnel, tout en 
+        restant pleinement exploitable dans l'écosystème logiciel existant.
+      </p>
+      <p>
+        En 2017, Google a fait de Kotlin le langage officiel de premier ordre pour le développement 
+        d'applications mobiles Android. Il est conçu pour éliminer des erreurs fréquentes de programmation, 
+        permettant d'écrire des applications mobiles et serveurs plus robustes et plus faciles à maintenir.
+      </p>
+      <p>
+        Kotlin est un langage à typage statique, orienté objet et fonctionnel. Il s'exécute principalement 
+        sur la machine virtuelle Java (JVM) et compile de manière transparente avec le code Java.
+      </p>
+      <!-- section explication balise et attribut  -->
+      <section>
+        <h2>Les points forts de Kotlin</h2>
+        <p>
+          Kotlin intègre des fonctionnalités natives avancées pour accélérer le développement et sécuriser 
+          l'exécution :
+        </p>
+        <ul>
+          <li>Null Safety : le système bloque à la compilation les risques d'erreurs d'objets nuls</li>
+          <li>Syntaxe concise : réduit considérablement la quantité de code répétitif obligatoire</li>
+          <li>val / var : sépare les valeurs immuables (val) des variables modifiables (var)</li>
+          <li>Data Classes : structures simplifiées pour créer des objets de stockage de données</li>
+        </ul>
+        <h2>Champs d'application majeurs</h2>
+        <p>
+          Grâce à sa polyvalence, Kotlin s'est étendu au-delà du mobile pour conquérir d'autres secteurs :
+        </p>
+        <ul>
+          <li>Développement mobile Android : création d'applications natives fluides et modernes</li>
+          <li>Kotlin Multiplatform (KMP) : partage de code métier commun entre iOS, Android et le Web</li>
+          <li>Développement Backend : conception de serveurs d'API à l'aide de frameworks comme Ktor</li>
+        </ul>
+        <h2>Exemple de code Kotlin</h2>
+        <pre>
+            <code>
+                // Déclaration d'une classe de données concise
+                data class Utilisateur(val id: Int, val pseudo: String)
+
+                fun main() {
+                    // Variable sécurisée contre la valeur null
+                    val message: String? = "Hello Kotlin"
+                    println("Longueur du message : ${message?.length}")
+                    
+                    val etudiant = Utilisateur(1, "Lucas")
+                    println("Utilisateur créé : ${etudiant.pseudo}")
+                }
+            </code>
+        </pre>
+      </section>
+      <section>
+        <h2>Ressources supplémentaires</h2>
+        <ul>
+          <li>
+            <a href="https://kotlinlang.org"
+              >Documentation officielle Kotlin</a
+            >
+          </li>
+          <li>
+            <a href="https://kotlinlang.org">Kotlin Playground - Éditeur en ligne</a>
+          </li>
+        </ul>
+      </section>
+    </main>

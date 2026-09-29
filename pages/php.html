@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/Global.css" />
+    <title>COURS SIO WEB | HTML</title>
+  </head>
+  <body>
+    <!-- En-tête de la page -->
+    <header>
+      <nav>
+        <div class="logo">Logo</div>
+        <div class="menu" id="menu">
+          <a href="../index.html">Accueil</a>
+          <a href="html.html">HTML</a>
+          <a href="css.html">CSS</a>
+          <a href="js.html">JavaScript</a>
+          <a href="php.html">PHP</a>
+          <a href="kotlin.html">Kotlin</a>
+          <a href="python.html">Python</a>
+          <a href="sql.html">SQL</a>
+          <a href="angular.html">Angular</a>
+          <a href="git.html">Git</a>
+          <a href="github.html">GitHub</a>
+          <a href="linux.html">Linux</a>
+          <a href="comande_linux.html">Ligne de commande Linux</a>
+        </div>
+        <div
+          class="burger"
+          id="burger"
+          aria-label="Menu"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </header>
+    <!-- Contenu principal -->
+        <!-- Contenu principal -->
+        <!-- Contenu principal -->
+    <main>
+      <h1>Introduction à PHP</h1>
+      <p>
+        PHP (Hypertext Preprocessor) a été créé par Rasmus Lerdorf en 1994. Conçu initialement pour 
+        suivre les visites sur son site web personnel, il s'est transformé en un puissant langage de script 
+        open-source utilisé dans le monde entier.
+      </p>
+      <p>
+        PHP a été conçu dans le but de générer dynamiquement des pages web côté serveur. Il permet 
+        de récupérer des informations issues de formulaires, de gérer des sessions utilisateur sécurisées 
+        et de communiquer de manière transparente avec des bases de données avant d'envoyer le HTML final au client.
+      </p>
+      <p>
+        C'est un langage exécuté sur le serveur, ce qui signifie que le client ne voit jamais le code PHP 
+        d'origine, mais seulement le résultat produit sous forme de code HTML ou de fichiers multimédias.
+      </p>
+      <!-- section explication balise et attribut  -->
+      <section>
+        <h2>Les fondamentaux de PHP</h2>
+        <p>
+          Le code PHP s'intègre directement au milieu du code HTML et utilise des structures spécifiques 
+          pour traiter les données :
+        </p>
+        <ul>
+          <li>&lt;?php et ?&gt; : balises d'ouverture et de fermeture délimitant le code serveur</li>
+          <li>$ (symbole dollar) : préfixe obligatoire pour déclarer et utiliser une variable</li>
+          <li>echo : instruction principale permettant d'afficher du texte ou d'injecter du HTML</li>
+          <li>include / require : instructions pour importer et modulariser des fichiers externes</li>
+        </ul>
+        <h2>Superglobales PHP courantes</h2>
+        <p>
+          Les superglobales sont des tableaux natifs accessibles partout dans le script pour 
+          récupérer l'état du système :
+        </p>
+        <ul>
+          <li>$_POST : récupère les données envoyées via la méthode POST d'un formulaire</li>
+          <li>$_GET : extrait les variables passées directement dans l'URL de la page</li>
+          <li>$_SESSION : conserve les variables de l'utilisateur tout au long de sa navigation</li>
+          <li>$_SERVER : contient des informations sur les en-têtes, les dossiers et les scripts</li>
+        </ul>
+        <h2>Exemple de code PHP</h2>
+        <pre>
+            <code>
+                &lt;?php
+                // Déclaration de variables et structure conditionnelle
+                $heure = date("H");
+                
+                if ($heure &lt; 18) {
+                    echo "&lt;p&gt;Bonjour et bienvenue sur notre application web !&lt;/p&gt;";
+                } else {
+                    echo "&lt;p&gt;Bonsoir et bienvenue sur notre application web !&lt;/p&gt;";
+                }
+                ?&gt;
+            </code>
+        </pre>
+      </section>
+      <section>
+        <h2>Ressources supplémentaires</h2>
+        <ul>
+          <li>
+            <a href="https://php.net"
+              >Documentation officielle PHP</a
+            >
+          </li>
+          <li>
+            <a href="https://w3schools.com"
+              >Tutoriel W3Schools PHP</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>

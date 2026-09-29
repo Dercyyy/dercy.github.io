@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/Global.css" />
+    <title>COURS SIO WEB | HTML</title>
+  </head>
+  <body>
+    <!-- En-tête de la page -->
+    <header>
+      <nav>
+        <div class="logo">Logo</div>
+        <div class="menu" id="menu">
+          <a href="../index.html">Accueil</a>
+          <a href="html.html">HTML</a>
+          <a href="css.html">CSS</a>
+          <a href="js.html">JavaScript</a>
+          <a href="php.html">PHP</a>
+          <a href="kotlin.html">Kotlin</a>
+          <a href="python.html">Python</a>
+          <a href="sql.html">SQL</a>
+          <a href="angular.html">Angular</a>
+          <a href="git.html">Git</a>
+          <a href="github.html">GitHub</a>
+          <a href="linux.html">Linux</a>
+          <a href="comande_linux.html">Ligne de commande Linux</a>
+        </div>
+        <div
+          class="burger"
+          id="burger"
+          aria-label="Menu"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </header>
+    <!-- Contenu principal -->
+        <!-- Contenu principal -->
+        <!-- Contenu principal -->
+        <!-- Contenu principal -->
+    <main>
+      <h1>Introduction à Git</h1>
+      <p>
+        Git a été créé en 2005 par Linus Torvalds, le fondateur du noyau Linux. Il a développé cette 
+        technologie afin de répondre aux besoins de rapidité, de décentralisation et de fiabilité requis 
+        pour coordonner le travail de milliers de contributeurs à travers le globe.
+      </p>
+      <p>
+        L'objectif de Git est de suivre l'historique d'un ensemble de fichiers de code source. Il permet 
+        de sauvegarder l'évolution d'un projet, de revenir à des versions antérieures en cas de bug et 
+        de fusionner proprement les développements écrits en parallèle par différents membres d'une équipe.
+      </p>
+      <p>
+        C'est un système de gestion de version décentralisé (VCS). Chaque développeur possède une copie 
+        locale intégrale de l'historique sur sa machine, lui permettant de travailler de manière autonome sans connexion.
+      </p>
+      <!-- section explication balise et attribut  -->
+      <section>
+        <h2>Les commandes Git fondamentales</h2>
+        <p>
+          Le workflow standard local repose sur quelques instructions simples à taper dans le terminal :
+        </p>
+        <ul>
+          <li>git init : crée un nouveau dépôt Git local au sein du répertoire courant</li>
+          <li>git status : liste les fichiers modifiés ou créés qui ne sont pas encore sauvegardés</li>
+          <li>git add : prépare et bascule les fichiers modifiés dans la zone de transit (Staging Area)</li>
+          <li>git commit -m : valide et fige définitivement l'état des fichiers préparés dans l'historique</li>
+        </ul>
+        <h2>Le système de branches</h2>
+        <p>
+          Les branches permettent d'isoler des espaces de travail indépendants pour développer des fonctionnalités :
+        </p>
+        <ul>
+          <li>git branch : répertorie les branches existantes ou crée une nouvelle ligne de code</li>
+          <li>git checkout / switch : permet de basculer d'une branche de travail à une autre</li>
+          <li>git merge : fusionne l'historique et les modifications d'une branche dans la branche active</li>
+        </ul>
+        <h2>Exemple de workflow Git</h2>
+        <pre>
+            <code>
+                # Cloner un dépôt existant et enregistrer des modifications
+                git clone https://example.com
+                cd depot
+                
+                # Modification des fichiers du projet
+                git add html.html style.css
+                git commit -m "Mise à jour des contenus pédagogiques"
+                git status
+            </code>
+        </pre>
+      </section>
+      <section>
+        <h2>Ressources supplémentaires</h2>
+        <ul>
+          <li>
+            <a href="https://git-scm.com">Livre Pro Git (Documentation officielle en français)</a>
+          </li>
+          <li>
+            <a href="https://w3schools.com"
+              >Tutoriel W3Schools Git</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
